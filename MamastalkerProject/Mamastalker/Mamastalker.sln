@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mamastalker.Server.BL", "Ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mamastalker.Server.WinformsUI", "Mamastalker.Server.WinformsUI\Mamastalker.Server.WinformsUI.csproj", "{49A9BEAC-AEDB-4AC7-ABC9-0A9132DAA7BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mamastalker.Common", "Mamastalker.Common\Mamastalker.Common.csproj", "{ABBA555A-3AC8-4B0D-8880-22EEE1FB96EE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{49A9BEAC-AEDB-4AC7-ABC9-0A9132DAA7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49A9BEAC-AEDB-4AC7-ABC9-0A9132DAA7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49A9BEAC-AEDB-4AC7-ABC9-0A9132DAA7BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ABBA555A-3AC8-4B0D-8880-22EEE1FB96EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ABBA555A-3AC8-4B0D-8880-22EEE1FB96EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ABBA555A-3AC8-4B0D-8880-22EEE1FB96EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ABBA555A-3AC8-4B0D-8880-22EEE1FB96EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
