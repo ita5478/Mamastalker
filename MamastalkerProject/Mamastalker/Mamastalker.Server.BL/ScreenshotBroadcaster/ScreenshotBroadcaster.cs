@@ -11,20 +11,18 @@ namespace Mamastalker.Server.BL.ScreenshotBroadcaster
         private delegate void NotifySubscribersCallback(ScreenshotCapturedEventArgs eventArgs);
         private event NotifySubscribersCallback _notifySubscribersEvent;
 
-        private CancellationToken _broadcastCancellationToken;
         private IScreenshotCapturer _screenshotCapturer;
         private int _broadcastIntervals;
 
-        public ScreenshotBroadcaster(CancellationToken broadcastCancellationToken, IScreenshotCapturer screenshotCapturer, int broadcastIntervals)
+        public ScreenshotBroadcaster(IScreenshotCapturer screenshotCapturer, int broadcastIntervals)
         {
-            _broadcastCancellationToken = broadcastCancellationToken;
             _screenshotCapturer = screenshotCapturer;
             _broadcastIntervals = broadcastIntervals;
         }
 
-        public async Task Broadcast()
+        public async Task Broadcast(CancellationToken cancellationToken)
         {
-            while (!_broadcastCancellationToken.IsCancellationRequested)
+            while (!cancellationToken.IsCancellationRequested)
             {
                 await Task.Delay(_broadcastIntervals);
 

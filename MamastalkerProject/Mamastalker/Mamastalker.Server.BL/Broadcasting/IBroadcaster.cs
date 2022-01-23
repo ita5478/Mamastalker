@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Mamastalker.Server.BL.Broadcasting
@@ -9,6 +10,6 @@ namespace Mamastalker.Server.BL.Broadcasting
     {
         void Subscribe(IBroadcastSubscriber subscriber);
 
-        Task Broadcast();
+        Task Broadcast(CancellationToken cancellationToken);
     }
 }
